@@ -143,7 +143,7 @@ const actions = {
       await store.dispatch('registerMicrophones', vidyoConnector);
       await store.dispatch('registerSpeakers', vidyoConnector);
       await store.dispatch('registerParticipantsListener', vidyoConnector);
-      await store.dispatch('registerSharingListener', vidyoConnector);
+      store.dispatch('registerSharingListener', vidyoConnector);
     }
     store.commit('initialized');
   },
